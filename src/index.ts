@@ -29,7 +29,10 @@ app.post('/shorten', async (req: Request, res: Response) => {
                 originalUrl: url,
             },
         });
-        res.json({ shortUrl: `${req.headers.host}/${newUrl.shortId}` });
+        res.json({
+            originalUrl: url,
+            shortUrl: `${req.headers.host}/${newUrl.shortId}`
+        });
     } catch (error) {
         res.status(500).json({ error: 'Error creating short URL' });
     }
