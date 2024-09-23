@@ -41,7 +41,8 @@ Encurtador de URLs simples e eficaz que permite transformar links longos em vers
 
 3. Configure seu banco de dados:
 
-   - Crie um arquivo .env na raiz do projeto e adicione a URL do banco de dados:
+- Crie um arquivo .env na raiz do projeto e adicione a URL do banco de dados:
+
 
    ```env
     DATABASE_URL="mysql://user:password@localhost:3306/url-short"
@@ -62,9 +63,9 @@ Encurtador de URLs simples e eficaz que permite transformar links longos em vers
 
 Para iniciar o servidor, use:
 
-    ```bash
-    npm run dev
-    ```
+   ```bash
+      npm run dev
+   ```
 
 O servidor estará rodando em `http://localhost:3000`.
 
